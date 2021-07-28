@@ -1,0 +1,9 @@
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Common\bin\Debug\netstandard2.1\Fitness.Data.Common.deps.json
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Common\bin\Debug\netstandard2.1\Fitness.Data.Common.dll
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Common\bin\Debug\netstandard2.1\Fitness.Data.Common.pdb
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Common\obj\Debug\netstandard2.1\Fitness.Data.Common.csprojAssemblyReference.cache
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Common\obj\Debug\netstandard2.1\Fitness.Data.Common.AssemblyInfoInputs.cache
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Common\obj\Debug\netstandard2.1\Fitness.Data.Common.AssemblyInfo.cs
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Common\obj\Debug\netstandard2.1\Fitness.Data.Common.csproj.CoreCompileInputs.cache
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Common\obj\Debug\netstandard2.1\Fitness.Data.Common.dll
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Common\obj\Debug\netstandard2.1\Fitness.Data.Common.pdb

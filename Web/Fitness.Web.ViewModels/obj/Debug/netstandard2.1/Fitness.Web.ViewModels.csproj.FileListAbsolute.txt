@@ -1,0 +1,16 @@
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\bin\Debug\netstandard2.1\Fitness.Web.ViewModels.deps.json
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\bin\Debug\netstandard2.1\Fitness.Web.ViewModels.dll
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\bin\Debug\netstandard2.1\Fitness.Web.ViewModels.pdb
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\bin\Debug\netstandard2.1\Fitness.Data.Common.dll
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\bin\Debug\netstandard2.1\Fitness.Data.Models.dll
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\bin\Debug\netstandard2.1\Fitness.Services.Mapping.dll
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\bin\Debug\netstandard2.1\Fitness.Data.Models.pdb
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\bin\Debug\netstandard2.1\Fitness.Services.Mapping.pdb
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\bin\Debug\netstandard2.1\Fitness.Data.Common.pdb
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\obj\Debug\netstandard2.1\Fitness.Web.ViewModels.csprojAssemblyReference.cache
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\obj\Debug\netstandard2.1\Fitness.Web.ViewModels.AssemblyInfoInputs.cache
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\obj\Debug\netstandard2.1\Fitness.Web.ViewModels.AssemblyInfo.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\obj\Debug\netstandard2.1\Fitness.Web.ViewModels.csproj.CoreCompileInputs.cache
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\obj\Debug\netstandard2.1\Fitness.Web.ViewModels.csproj.CopyComplete
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\obj\Debug\netstandard2.1\Fitness.Web.ViewModels.dll
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.ViewModels\obj\Debug\netstandard2.1\Fitness.Web.ViewModels.pdb

@@ -1,0 +1,9 @@
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Mapping\bin\Debug\netstandard2.1\Fitness.Services.Mapping.deps.json
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Mapping\bin\Debug\netstandard2.1\Fitness.Services.Mapping.dll
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Mapping\bin\Debug\netstandard2.1\Fitness.Services.Mapping.pdb
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Mapping\obj\Debug\netstandard2.1\Fitness.Services.Mapping.csprojAssemblyReference.cache
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Mapping\obj\Debug\netstandard2.1\Fitness.Services.Mapping.AssemblyInfoInputs.cache
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Mapping\obj\Debug\netstandard2.1\Fitness.Services.Mapping.AssemblyInfo.cs
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Mapping\obj\Debug\netstandard2.1\Fitness.Services.Mapping.csproj.CoreCompileInputs.cache
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Mapping\obj\Debug\netstandard2.1\Fitness.Services.Mapping.dll
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Mapping\obj\Debug\netstandard2.1\Fitness.Services.Mapping.pdb

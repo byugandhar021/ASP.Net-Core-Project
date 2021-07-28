@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ljj3/5YzAkWgBvHoszljTehinFczsj4DW64Hyi2lDN8/OmFMYgjx9UDOMHttJ0xzzoGNIUrhpGdNcKuV4ERMeQ==",
+  "success": true,
+  "projectFilePath": "D:\\Desktop\\ASP.Net-Core-Project\\Services\\Fitness.Services\\Fitness.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Acer\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.312\\stylecop.analyzers.1.2.0-beta.312.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.312\\stylecop.analyzers.unstable.1.2.0.312.nupkg.sha512"
+  ],
+  "logs": []
+}
