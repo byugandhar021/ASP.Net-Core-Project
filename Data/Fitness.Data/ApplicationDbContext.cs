@@ -24,8 +24,6 @@
         {
         }
 
-        public DbSet<Setting> Settings { get; set; }
-
         public DbSet<Diet> Diets { get; set; }
 
         public DbSet<Exercise> Exercises { get; set; }

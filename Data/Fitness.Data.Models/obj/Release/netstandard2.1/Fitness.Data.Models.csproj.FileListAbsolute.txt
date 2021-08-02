@@ -1,0 +1,12 @@
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\bin\Release\netstandard2.1\Fitness.Data.Models.deps.json
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\bin\Release\netstandard2.1\Fitness.Data.Models.dll
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\bin\Release\netstandard2.1\Fitness.Data.Models.pdb
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\bin\Release\netstandard2.1\Fitness.Data.Common.dll
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\bin\Release\netstandard2.1\Fitness.Data.Common.pdb
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\obj\Release\netstandard2.1\Fitness.Data.Models.csprojAssemblyReference.cache
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\obj\Release\netstandard2.1\Fitness.Data.Models.AssemblyInfoInputs.cache
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\obj\Release\netstandard2.1\Fitness.Data.Models.AssemblyInfo.cs
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\obj\Release\netstandard2.1\Fitness.Data.Models.csproj.CoreCompileInputs.cache
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\obj\Release\netstandard2.1\Fitness.Data.Models.csproj.CopyComplete
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\obj\Release\netstandard2.1\Fitness.Data.Models.dll
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data.Models\obj\Release\netstandard2.1\Fitness.Data.Models.pdb

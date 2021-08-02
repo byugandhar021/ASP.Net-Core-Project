@@ -8,7 +8,6 @@
     using Fitness.Data.Models;
     using Fitness.Data.Repositories;
     using Fitness.Data.Seeding;
-    using Fitness.Services.Data;
     using Fitness.Services.Mapping;
     using Fitness.Services.Messaging;
     using Fitness.Web.ViewModels;
@@ -64,7 +63,7 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
+            //services.AddTransient<ISettingsService, SettingsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
