@@ -2,6 +2,7 @@
 {
     using System;
     using System.ComponentModel.DataAnnotations;
+
     using Fitness.Data.Common;
     using Fitness.Data.Common.Models;
 
@@ -13,7 +14,7 @@
         }
 
         [Required]
-        [StringLength(30, ErrorMessage = Constants.ErrorMessageName, MinimumLength = 3)]
+        [StringLength(30, ErrorMessage = Constants.NameErrorMessage, MinimumLength = 3)]
         public string Name { get; set; }
 
         [Required]

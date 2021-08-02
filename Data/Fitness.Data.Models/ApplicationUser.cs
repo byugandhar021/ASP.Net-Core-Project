@@ -4,6 +4,7 @@ namespace Fitness.Data.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+
     using Fitness.Data.Common;
     using Fitness.Data.Common.Models;
 
@@ -35,16 +36,11 @@ namespace Fitness.Data.Models
         public DateTime? DeletedOn { get; set; }
 
         [Required]
-        [EmailAddress]
-        public string Email { get; set; }
-
-        [Required]
-        [StringLength(50, ErrorMessage = Constants.ErrorMessagePassword, MinimumLength = 3)]
+        [StringLength(50, ErrorMessage = Constants.PasswordErrorMessage, MinimumLength = 3)]
         public string Password { get; set; }
 
+        [Required]
         public string Location { get; set; }
-
-        public string Username { get; set; }
 
         public int? Age { get; set; }
 

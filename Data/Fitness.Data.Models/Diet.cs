@@ -15,16 +15,22 @@
         }
 
         [Required]
-        [StringLength(30, ErrorMessage = Constants.ErrorMessageName, MinimumLength = 3)]
+        [StringLength(30, ErrorMessage = Constants.NameErrorMessage, MinimumLength = 3)]
         public string Name { get; set; }
 
-        public string DateTime { get; set; }
+        public string Duration { get; set; }
 
         [Required]
         public string Description { get; set; }
 
         [Required]
+        public string UserId { get; set; }
+
+        public ApplicationUser User { get; set; }
+
+        [Required]
         public string CategoryId { get; set; }
+
         public Category Category { get; set; }
 
         public ICollection<Comment> Comments { get; set; }

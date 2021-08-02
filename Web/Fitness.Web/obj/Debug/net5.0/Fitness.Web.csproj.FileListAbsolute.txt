@@ -464,3 +464,4 @@ D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Fitness.Web.dll
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\ref\Fitness.Web.dll
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Fitness.Web.pdb
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Fitness.Web.genruntimeconfig.cache
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
