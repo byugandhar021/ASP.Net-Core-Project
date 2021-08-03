@@ -4,6 +4,6 @@
     {
         public const string SystemName = "Fitness";
 
-        public const string AdministratorRoleName = "Admin";
+        //public const string AdministratorRoleName = "Admin";
     }
 }

@@ -21,13 +21,20 @@ using Fitness.Web;
 #nullable disable
 #nullable restore
 #line 2 "D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\Views\_ViewImports.cshtml"
 using Fitness.Web.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f93dc7a3980b33ca900f87ebfc95b4576f8372f0", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"03cf6cf333143eeed092ee9fe55c50157da97531", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6964fbbb389fc7498a12e97a49464751318f074f", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -1,7 +1,6 @@
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\bin\Debug\netstandard2.1\Fitness.Web.Infrastructure.deps.json
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\bin\Debug\netstandard2.1\Fitness.Web.Infrastructure.dll
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\bin\Debug\netstandard2.1\Fitness.Web.Infrastructure.pdb
-D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\obj\Debug\netstandard2.1\Fitness.Web.Infrastructure.csprojAssemblyReference.cache
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\obj\Debug\netstandard2.1\Fitness.Web.Infrastructure.AssemblyInfoInputs.cache
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\obj\Debug\netstandard2.1\Fitness.Web.Infrastructure.AssemblyInfo.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\obj\Debug\netstandard2.1\Fitness.Web.Infrastructure.csproj.CoreCompileInputs.cache
