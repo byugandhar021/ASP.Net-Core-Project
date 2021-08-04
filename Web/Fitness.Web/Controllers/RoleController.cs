@@ -1,23 +1,28 @@
 ﻿namespace Fitness.Web.Controllers
 {
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.Threading.Tasks;
+
     using Fitness.Data.Models;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
-    using System.ComponentModel.DataAnnotations;
-    using System.Threading.Tasks;
 
     public class RoleController : BaseController
     {
         private readonly RoleManager<ApplicationRole> roleManager;
+        private readonly UserManager<ApplicationUser> userManager;
 
-        public RoleController(RoleManager<ApplicationRole> roleManager)
+        public RoleController(RoleManager<ApplicationRole> roleManager, UserManager<ApplicationUser> userManager)
         {
             this.roleManager = roleManager;
+            this.userManager = userManager;
         }
 
         public IActionResult Index()
         {
-            return this.View();
+            var roles = this.roleManager.Roles;
+            return this.View(roles);
         }
 
         public IActionResult Create() => this.View();
@@ -41,9 +46,72 @@
             return this.View();
         }
 
-        public async Task<IActionResult> Delete(string roleId)
+        public async Task<IActionResult> Update(string id)
         {
-            var role = await this.roleManager.FindByNameAsync(roleId);
+            var role = await this.roleManager.FindByIdAsync(id);
+            var members = new List<ApplicationUser>();
+            var nonMembers = new List<ApplicationUser>();
+
+            foreach (var user in this.userManager.Users)
+            {
+                var list = await this.userManager.IsInRoleAsync(user, role.Name) ? members : nonMembers;
+                list.Add(user);
+            }
+
+            return this.View(new RoleEdit
+            {
+                Role = role,
+                Members = members,
+                NonMembers = nonMembers,
+            });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(RoleModification model)
+        {
+            IdentityResult result;
+            if (this.ModelState.IsValid)
+            {
+                foreach (string userId in model.AddedIds ?? new string[] { })
+                {
+                    var user = await this.userManager.FindByIdAsync(userId);
+                    if (user != null)
+                    {
+                        result = await this.userManager.AddToRoleAsync(user, model.RoleName);
+                        if (!result.Succeeded)
+                        {
+                            this.Errors(result);
+                        }
+                    }
+                }
+
+                foreach (string userId in model.DeletedIds ?? new string[] { })
+                {
+                    var user = await this.userManager.FindByIdAsync(userId);
+                    if (user != null)
+                    {
+                        result = await this.userManager.RemoveFromRoleAsync(user, model.RoleName);
+                        if (!result.Succeeded)
+                        {
+                            this.Errors(result);
+                        }
+                    }
+                }
+            }
+
+            if (!this.ModelState.IsValid)
+            {
+                return this.RedirectToAction(nameof(this.Index));
+            }
+            else
+            {
+                return await this.Update(model.RoleId);
+            }
+        }
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            var role = await this.roleManager.FindByIdAsync(id);
 
             if (role != null)
             {

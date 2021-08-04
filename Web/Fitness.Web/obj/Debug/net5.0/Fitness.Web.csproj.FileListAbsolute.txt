@@ -470,3 +470,4 @@ D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Hom
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Nutrition\All.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Role\Create.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Role\Update.cshtml.g.cs
