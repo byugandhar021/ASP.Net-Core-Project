@@ -11,7 +11,6 @@ D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\bin\Debug\net5.0\Fitness.Data.
 D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\bin\Debug\net5.0\Fitness.Common.pdb
 D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\bin\Debug\net5.0\Fitness.Data.Common.pdb
 D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\bin\Debug\net5.0\Fitness.Data.Models.pdb
-D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\obj\Debug\net5.0\Fitness.Data.csprojAssemblyReference.cache
 D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\obj\Debug\net5.0\Fitness.Data.GeneratedMSBuildEditorConfig.editorconfig
 D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\obj\Debug\net5.0\Fitness.Data.AssemblyInfoInputs.cache
 D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\obj\Debug\net5.0\Fitness.Data.AssemblyInfo.cs
@@ -21,3 +20,4 @@ D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\obj\Debug\net5.0\Fitness.Data.
 D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\obj\Debug\net5.0\ref\Fitness.Data.dll
 D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\obj\Debug\net5.0\Fitness.Data.pdb
 D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\obj\Debug\net5.0\Fitness.Data.genruntimeconfig.cache
+D:\Desktop\ASP.Net-Core-Project\Data\Fitness.Data\obj\Debug\net5.0\Fitness.Data.csproj.AssemblyReference.cache

@@ -72,7 +72,7 @@
             IdentityResult result;
             if (this.ModelState.IsValid)
             {
-                foreach (string userId in model.AddedIds ?? new string[] { })
+                foreach (string userId in model.AddIds ?? new string[] { })
                 {
                     var user = await this.userManager.FindByIdAsync(userId);
                     if (user != null)
@@ -85,7 +85,7 @@
                     }
                 }
 
-                foreach (string userId in model.DeletedIds ?? new string[] { })
+                foreach (string userId in model.DeleteIds ?? new string[] { })
                 {
                     var user = await this.userManager.FindByIdAsync(userId);
                     if (user != null)

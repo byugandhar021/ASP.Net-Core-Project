@@ -9,9 +9,9 @@
 
         public string RoleId { get; set; }
 
-        public string[] AddedIds { get; set; }
+        public string[] AddIds { get; set; }
 
-        public string[] DeletedIds { get; set; }
+        public string[] DeleteIds { get; set; }
 
     }
 }

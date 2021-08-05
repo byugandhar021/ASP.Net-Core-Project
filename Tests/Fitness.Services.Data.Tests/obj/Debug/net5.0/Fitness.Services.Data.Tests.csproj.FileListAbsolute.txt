@@ -162,7 +162,6 @@ D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\bin\Debug\net5
 D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\bin\Debug\net5.0\Fitness.Data.Common.pdb
 D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\bin\Debug\net5.0\Fitness.Data.Models.pdb
 D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\bin\Debug\net5.0\Fitness.Services.Mapping.pdb
-D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\obj\Debug\net5.0\Fitness.Services.Data.Tests.csprojAssemblyReference.cache
 D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\obj\Debug\net5.0\Fitness.Services.Data.Tests.GeneratedMSBuildEditorConfig.editorconfig
 D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\obj\Debug\net5.0\Fitness.Services.Data.Tests.AssemblyInfoInputs.cache
 D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\obj\Debug\net5.0\Fitness.Services.Data.Tests.AssemblyInfo.cs
@@ -172,3 +171,4 @@ D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\obj\Debug\net5
 D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\obj\Debug\net5.0\ref\Fitness.Services.Data.Tests.dll
 D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\obj\Debug\net5.0\Fitness.Services.Data.Tests.pdb
 D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\obj\Debug\net5.0\Fitness.Services.Data.Tests.genruntimeconfig.cache
+D:\Desktop\ASP.Net-Core-Project\Tests\Fitness.Services.Data.Tests\obj\Debug\net5.0\Fitness.Services.Data.Tests.csproj.AssemblyReference.cache

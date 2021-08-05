@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LLi7l4NbomzAaSbx+xnLK1+cu0Y1X0enA7s0BIusEX3Hvk4T/u488A4+14+fddOsVPyfRQwLbB4hNhe7l2KYXw==",
+  "dgSpecHash": "fgwN3Px/cS/hTs6F9Xeqybp4OCTLQefOqmZ58AHnl00Pp28S1rHhanv+C7zdDdr6WWIxXMQsJbIPSl8NAIcv6g==",
   "success": true,
   "projectFilePath": "D:\\Desktop\\ASP.Net-Core-Project\\Services\\Fitness.Services.Messaging\\Fitness.Services.Messaging.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
-    "C:\\Users\\Acer\\.nuget\\packages\\sendgrid\\9.23.1\\sendgrid.9.23.1.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\sendgrid\\9.24.1\\sendgrid.9.24.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\starkbank-ecdsa\\1.3.1\\starkbank-ecdsa.1.3.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.312\\stylecop.analyzers.1.2.0-beta.312.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.312\\stylecop.analyzers.unstable.1.2.0.312.nupkg.sha512",

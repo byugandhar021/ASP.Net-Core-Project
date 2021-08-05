@@ -64,7 +64,6 @@ D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\bin\Debug\net5.0\Fitness.Services.
 D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\bin\Debug\net5.0\Fitness.Services.Mapping.pdb
 D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\bin\Debug\net5.0\Fitness.Services.Messaging.pdb
 D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\bin\Debug\net5.0\Fitness.Services.pdb
-D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\obj\Debug\net5.0\Sandbox.csprojAssemblyReference.cache
 D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\obj\Debug\net5.0\Sandbox.GeneratedMSBuildEditorConfig.editorconfig
 D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\obj\Debug\net5.0\Sandbox.AssemblyInfoInputs.cache
 D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\obj\Debug\net5.0\Sandbox.AssemblyInfo.cs
@@ -74,3 +73,4 @@ D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\obj\Debug\net5.0\Sandbox.dll
 D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\obj\Debug\net5.0\ref\Sandbox.dll
 D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\obj\Debug\net5.0\Sandbox.pdb
 D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\obj\Debug\net5.0\Sandbox.genruntimeconfig.cache
+D:\Desktop\ASP.Net-Core-Project\Tests\Sandbox\obj\Debug\net5.0\Sandbox.csproj.AssemblyReference.cache

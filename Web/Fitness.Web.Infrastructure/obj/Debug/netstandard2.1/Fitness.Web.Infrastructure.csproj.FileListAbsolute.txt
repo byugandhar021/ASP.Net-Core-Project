@@ -6,3 +6,4 @@ D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\obj\Debug\netstan
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\obj\Debug\netstandard2.1\Fitness.Web.Infrastructure.csproj.CoreCompileInputs.cache
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\obj\Debug\netstandard2.1\Fitness.Web.Infrastructure.dll
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\obj\Debug\netstandard2.1\Fitness.Web.Infrastructure.pdb
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web.Infrastructure\obj\Debug\netstandard2.1\Fitness.Web.Infrastructure.csproj.AssemblyReference.cache

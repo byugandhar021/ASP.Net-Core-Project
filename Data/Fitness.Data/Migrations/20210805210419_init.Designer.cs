@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fitness.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210803212241_init")]
+    [Migration("20210805210419_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
