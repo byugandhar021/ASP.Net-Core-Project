@@ -6,7 +6,7 @@
     using Fitness.Data.Models;
     using Fitness.Web.ViewModels.Diet;
 
-    public interface IDietsService
+    public interface ICategoryService
     {
         IEnumerable<Diet> GetAllDiets();
 

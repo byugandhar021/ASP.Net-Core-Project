@@ -1,0 +1,15 @@
+﻿
+<h1>Pederas</h1>
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        @foreach (var item in Model)
+        {
+            <a class="dropdown-item" href="#">@item.Name</a>
+        }
+    </div>
+</div>
+<button asp-area="" asp-action="Create" asp-controller="Category"> Create new Category</button>

@@ -1,6 +1,4 @@
-﻿@model Fitness.Web.ViewModels.Diet.AllViewModel
-
-@{
+﻿@{
     ViewData["Title"] = "All";
 }
 
@@ -10,7 +8,7 @@
 
 <div>
     <ul>
-        @foreach (var diet in Model.Diets)
+        @foreach (var diet in Model)
         {
             <li>
                 <p>@diet.Name</p>

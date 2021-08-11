@@ -8,11 +8,11 @@
     using Fitness.Data.Models;
     using Fitness.Web.ViewModels.Diet;
 
-    public class DietsService : IDietsService
+    public class CategoryService : ICategoryService
     {
         private readonly IDeletableEntityRepository<Diet> dietRepository;
 
-        public DietsService(IDeletableEntityRepository<Diet> dietRepository)
+        public CategoryService(IDeletableEntityRepository<Diet> dietRepository)
         {
             this.dietRepository = dietRepository;
         }
@@ -24,6 +24,7 @@
                 Name = createInputModel.Name,
                 Duration = createInputModel.Duration,
                 Description = createInputModel.Description,
+                CategoryId = createInputModel.CategoryId,
                 UserId = userId,
             };
 
