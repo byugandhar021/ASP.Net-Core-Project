@@ -1,1 +1,22 @@
-﻿Diets works
+﻿@model Fitness.Web.ViewModels.Diet.AllViewModel
+
+@{
+    ViewData["Title"] = "All";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h2>eheel</h2>
+
+<div>
+    <ul>
+        @foreach (var diet in Model.Diets)
+        {
+            <li>
+                <p>@diet.Name</p>
+                <p>@diet.Duration</p>
+                <p>@diet.Description</p>
+            </li>
+        }
+    </ul>
+</div>

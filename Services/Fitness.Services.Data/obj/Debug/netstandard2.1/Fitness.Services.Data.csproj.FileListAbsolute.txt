@@ -14,3 +14,5 @@ D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Data\obj\Debug\netstan
 D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Data\obj\Debug\netstandard2.1\Fitness.Services.Data.dll
 D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Data\obj\Debug\netstandard2.1\Fitness.Services.Data.pdb
 D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Data\obj\Debug\netstandard2.1\Fitness.Services.Data.csproj.AssemblyReference.cache
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Data\bin\Debug\netstandard2.1\Fitness.Web.ViewModels.dll
+D:\Desktop\ASP.Net-Core-Project\Services\Fitness.Services.Data\bin\Debug\netstandard2.1\Fitness.Web.ViewModels.pdb

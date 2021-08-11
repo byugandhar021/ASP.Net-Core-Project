@@ -2752,7 +2752,8 @@
         "dependencies": {
           "Fitness.Data.Common": "1.0.0",
           "Fitness.Data.Models": "1.0.0",
-          "Fitness.Services.Mapping": "1.0.0"
+          "Fitness.Services.Mapping": "1.0.0",
+          "Fitness.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Fitness.Services.Data.dll": {}
@@ -2772,6 +2773,20 @@
         },
         "runtime": {
           "bin/placeholder/Fitness.Services.Mapping.dll": {}
+        }
+      },
+      "Fitness.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Fitness.Data.Models": "1.0.0",
+          "Fitness.Services.Mapping": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Fitness.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Fitness.Web.ViewModels.dll": {}
         }
       }
     }
@@ -9096,6 +9111,11 @@
       "type": "project",
       "path": "../../Services/Fitness.Services.Mapping/Fitness.Services.Mapping.csproj",
       "msbuildProject": "../../Services/Fitness.Services.Mapping/Fitness.Services.Mapping.csproj"
+    },
+    "Fitness.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../../Web/Fitness.Web.ViewModels/Fitness.Web.ViewModels.csproj",
+      "msbuildProject": "../../Web/Fitness.Web.ViewModels/Fitness.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

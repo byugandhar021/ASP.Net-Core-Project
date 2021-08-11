@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+
     using Fitness.Data.Common;
     using Fitness.Data.Common.Models;
 

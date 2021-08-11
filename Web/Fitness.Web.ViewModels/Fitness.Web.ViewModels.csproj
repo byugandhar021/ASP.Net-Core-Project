@@ -23,4 +23,9 @@
     <ProjectReference Include="..\..\Services\Fitness.Services.Mapping\Fitness.Services.Mapping.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Gym\" />
+    <Folder Include="Nutrition\" />
+  </ItemGroup>
+
 </Project>

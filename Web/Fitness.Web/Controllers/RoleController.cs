@@ -2,11 +2,21 @@
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Linq;
     using System.Threading.Tasks;
 
     using Fitness.Data.Models;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
+
+    public class PrivateRole
+    {
+        public string Name { get; set; }
+        public string Id { get; set; }
+    }
+
+    [Authorize(Roles = "admin")]
 
     public class RoleController : BaseController
     {
@@ -19,10 +29,50 @@
             this.userManager = userManager;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var roles = this.roleManager.Roles;
-            return this.View(roles);
+            var rawRoles = this.roleManager.Roles;
+            var roles = new List<PrivateRole>();
+            foreach (var name in rawRoles)
+            {
+                var role = await this.roleManager.FindByNameAsync(name.Name);
+                if (role != null)
+                {
+                    roles.Add(new PrivateRole
+                    {
+                        Id = role.Id,
+                        Name = role.Name
+                    });
+                }
+            }
+
+            var dict = new Dictionary<PrivateRole, List<string>>();
+            foreach (var role in roles)
+            {
+                foreach (var user in this.userManager.Users)
+                {
+                    if (await this.userManager.IsInRoleAsync(user, role.Name))
+                    {
+                        if (dict.ContainsKey(role))
+                        {
+                            dict[role].Add(user.UserName);
+                        }
+                        else
+                        {
+                            dict.Add(role, new List<string>() { user.UserName });
+                        }
+                    }
+                    else
+                    {
+                        if (!dict.ContainsKey(role))
+                        {
+                            dict.Add(role, new List<string>());
+                        }
+                    }
+                }
+            }
+
+            return this.View(dict);
         }
 
         public IActionResult Create() => this.View();
@@ -141,4 +191,6 @@
             }
         }
     }
+
+
 }

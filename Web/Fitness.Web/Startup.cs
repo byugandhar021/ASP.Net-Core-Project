@@ -8,6 +8,10 @@
     using Fitness.Data.Models;
     using Fitness.Data.Repositories;
     using Fitness.Data.Seeding;
+    using Fitness.Services.Data.Diets;
+    using Fitness.Services.Data.Exercises;
+    using Fitness.Services.Data.Gyms;
+    using Fitness.Services.Data.Nutritions;
     using Fitness.Services.Mapping;
     using Fitness.Services.Messaging;
     using Fitness.Web.ViewModels;
@@ -63,6 +67,10 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
+            services.AddTransient<IDietsService, DietsService>();
+            services.AddTransient<IExercisesService, ExercisesService>();
+            services.AddTransient<IGymsService, GymsService>();
+            services.AddTransient<INutritionsService, NutritionsService>();
             //services.AddTransient<ISettingsService, SettingsService>();
         }
 

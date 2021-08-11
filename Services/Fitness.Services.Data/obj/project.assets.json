@@ -382,6 +382,20 @@
         "runtime": {
           "bin/placeholder/Fitness.Services.Mapping.dll": {}
         }
+      },
+      "Fitness.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Fitness.Data.Models": "1.0.0",
+          "Fitness.Services.Mapping": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Fitness.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Fitness.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -1190,6 +1204,11 @@
       "type": "project",
       "path": "../Fitness.Services.Mapping/Fitness.Services.Mapping.csproj",
       "msbuildProject": "../Fitness.Services.Mapping/Fitness.Services.Mapping.csproj"
+    },
+    "Fitness.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../../Web/Fitness.Web.ViewModels/Fitness.Web.ViewModels.csproj",
+      "msbuildProject": "../../Web/Fitness.Web.ViewModels/Fitness.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1197,6 +1216,7 @@
       "Fitness.Data.Common >= 1.0.0",
       "Fitness.Data.Models >= 1.0.0",
       "Fitness.Services.Mapping >= 1.0.0",
+      "Fitness.Web.ViewModels >= 1.0.0",
       "StyleCop.Analyzers >= 1.2.0-beta.312"
     ]
   },
@@ -1235,6 +1255,9 @@
             },
             "D:\\Desktop\\ASP.Net-Core-Project\\Services\\Fitness.Services.Mapping\\Fitness.Services.Mapping.csproj": {
               "projectPath": "D:\\Desktop\\ASP.Net-Core-Project\\Services\\Fitness.Services.Mapping\\Fitness.Services.Mapping.csproj"
+            },
+            "D:\\Desktop\\ASP.Net-Core-Project\\Web\\Fitness.Web.ViewModels\\Fitness.Web.ViewModels.csproj": {
+              "projectPath": "D:\\Desktop\\ASP.Net-Core-Project\\Web\\Fitness.Web.ViewModels\\Fitness.Web.ViewModels.csproj"
             }
           }
         }

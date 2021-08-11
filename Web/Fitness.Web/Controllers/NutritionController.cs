@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fitness.Web.Controllers
 {
-    public class GymController1 : Controller
+    public class NutritionController : Controller
     {
         public IActionResult Index()
         {

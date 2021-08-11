@@ -12,6 +12,7 @@
           "Fitness.Data.Common": "1.0.0",
           "Fitness.Data.Models": "1.0.0",
           "Fitness.Services.Mapping": "1.0.0",
+          "Fitness.Web.ViewModels": "1.0.0",
           "StyleCop.Analyzers": "1.2.0-beta.312"
         },
         "runtime": {
@@ -338,6 +339,15 @@
         "runtime": {
           "Fitness.Services.Mapping.dll": {}
         }
+      },
+      "Fitness.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "Fitness.Data.Models": "1.0.0",
+          "Fitness.Services.Mapping": "1.0.0"
+        },
+        "runtime": {
+          "Fitness.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -568,6 +578,11 @@
       "sha512": ""
     },
     "Fitness.Services.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fitness.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

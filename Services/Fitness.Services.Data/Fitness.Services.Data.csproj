@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\Fitness.Data.Common\Fitness.Data.Common.csproj" />
     <ProjectReference Include="..\..\Data\Fitness.Data.Models\Fitness.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Web\Fitness.Web.ViewModels\Fitness.Web.ViewModels.csproj" />
     <ProjectReference Include="..\Fitness.Services.Mapping\Fitness.Services.Mapping.csproj" />
   </ItemGroup>
 
