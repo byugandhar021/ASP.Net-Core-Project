@@ -3,6 +3,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+
     using Fitness.Data.Common.Repositories;
     using Fitness.Data.Models;
 
@@ -14,6 +15,7 @@
         {
             this.exerciseRepository = deletableEntityRepository;
         }
+
         public Task CreateExerciseAsync(string userId)
         {
             throw new System.NotImplementedException();

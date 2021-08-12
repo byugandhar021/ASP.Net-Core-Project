@@ -3,7 +3,6 @@
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
-    using Fitness.Data.Models;
     using Fitness.Web.ViewModels.Diet;
 
     public interface IDietsService

@@ -39,7 +39,14 @@
         [HttpPost]
         public async Task<IActionResult> Create(CreateInputModel model)
         {
-            await this.dietsService.CreateDietAsync(this.User.FindFirstValue(ClaimTypes.NameIdentifier), model);
+            if (!this.ModelState.IsValid)
+            {
+                return this.View();
+            }
+
+            var userId = this.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            await this.dietsService.CreateDietAsync(userId, model);
             return this.RedirectToAction("All");
         }
     }

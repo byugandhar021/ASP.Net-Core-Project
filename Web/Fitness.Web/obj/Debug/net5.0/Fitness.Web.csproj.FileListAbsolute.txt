@@ -473,6 +473,6 @@ D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Areas\Ide
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Diet\CreateDiet.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Diet\Create.cshtml.g.cs

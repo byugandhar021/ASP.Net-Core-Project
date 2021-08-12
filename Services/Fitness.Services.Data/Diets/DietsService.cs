@@ -1,5 +1,6 @@
 ﻿namespace Fitness.Services.Data.Diets
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -25,7 +26,7 @@
                 Name = createInputModel.Name,
                 Duration = createInputModel.Duration,
                 Description = createInputModel.Description,
-                CategoryId = createInputModel.CategoryId,
+                CategoryId = "eee111",
                 UserId = userId,
             };
 
