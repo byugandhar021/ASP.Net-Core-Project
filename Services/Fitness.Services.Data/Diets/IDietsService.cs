@@ -6,16 +6,16 @@
     using Fitness.Data.Models;
     using Fitness.Web.ViewModels.Diet;
 
-    public interface ICategoryService
+    public interface IDietsService
     {
-        IEnumerable<Diet> GetAllDiets();
+        IEnumerable<T> GetAllDiets<T>();
 
         Task CreateDietAsync(string userId, CreateInputModel createInputModel);
 
-        Diet GetDietById(string dietId);
+        T GetDietById<T>(string dietId);
 
         Task UpdateDietAsync(EditInputModel editInputModel);
 
-        Task DeleteDietById(string dietId);
+        Task DeleteDietByIdAsync(string dietId);
     }
 }

@@ -3,10 +3,8 @@
     using System.ComponentModel.DataAnnotations;
 
     using Fitness.Data.Common;
-    using Fitness.Data.Models;
-    using Fitness.Services.Mapping;
 
-    public class CreateInputModel : IMapTo<Diet>
+    public class CreateInputModel
     {
         [Required]
         [StringLength(30, ErrorMessage = Constants.NameErrorMessage, MinimumLength = 3)]

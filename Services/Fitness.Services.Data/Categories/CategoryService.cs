@@ -21,7 +21,7 @@
         {
             var category = new Category
             {
-                Name = categoryName
+                Name = categoryName,
             };
 
             await this.categoryRepository.AddAsync(category);
@@ -53,14 +53,15 @@
 
         public async Task UpdateCategoryAsync(EditInputModel editInputModel)
         {
-            var diet = this.categoryRepository.All().Where(x => x.Id == editInputModel.Id).FirstOrDefault();
+            var category = new Category();
+                ////this.categoryRepository.All().Where(x => x.Id == editInputModel.Id).FirstOrDefault();
 
-            diet.Name = editInputModel.Name;
-            diet.Duration = editInputModel.Duration;
-            diet.Description = editInputModel.Description;
-            diet.UserId = editInputModel.UserId;
+            ////diet.Name = editInputModel.Name;
+            ////diet.Duration = editInputModel.Duration;
+            ////diet.Description = editInputModel.Description;
+            ////diet.UserId = editInputModel.UserId;
 
-            this.categoryRepository.Update(diet);
+            this.categoryRepository.Update(category);
             await this.categoryRepository.SaveChangesAsync();
         }
     }

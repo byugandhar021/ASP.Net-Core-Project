@@ -1,8 +1,9 @@
 ﻿namespace Fitness.Web.Controllers
 {
+    using System.Threading.Tasks;
+
     using Fitness.Services.Data.Categories;
     using Microsoft.AspNetCore.Mvc;
-    using System.Threading.Tasks;
 
     public class CategoryController : Controller
     {

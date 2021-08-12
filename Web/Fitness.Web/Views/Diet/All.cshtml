@@ -1,20 +1,24 @@
-﻿@{
-    ViewData["Title"] = "All";
+﻿@model Fitness.Web.ViewModels.Diet.AllViewModel
+
+@{
+    this.ViewData["Title"] = "All";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1>@this.ViewData["Title"]</h1>
 
 <h2>eheel</h2>
 
-<div>
-    <ul>
-        @foreach (var diet in Model)
-        {
-            <li>
-                <p>@diet.Name</p>
-                <p>@diet.Duration</p>
-                <p>@diet.Description</p>
-            </li>
-        }
-    </ul>
+<div class="row">
+    <div class="media col-md-4">
+        <ul>
+            @foreach (var diet in Model.Diets)
+            {
+                <li>
+                    <p>@diet.Name</p>
+                    <p>@diet.Duration</p>
+                    <p>@diet.Description</p>
+                </li>
+            }
+        </ul>
+    </div>
 </div>

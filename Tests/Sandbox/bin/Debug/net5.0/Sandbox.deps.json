@@ -1201,7 +1201,8 @@
         "dependencies": {
           "Fitness.Data.Common": "1.0.0",
           "Fitness.Data.Models": "1.0.0",
-          "Fitness.Services.Mapping": "1.0.0"
+          "Fitness.Services.Mapping": "1.0.0",
+          "Fitness.Web.ViewModels": "1.0.0"
         },
         "runtime": {
           "Fitness.Services.Data.dll": {}
@@ -1221,6 +1222,15 @@
         },
         "runtime": {
           "Fitness.Services.Messaging.dll": {}
+        }
+      },
+      "Fitness.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "Fitness.Data.Models": "1.0.0",
+          "Fitness.Services.Mapping": "1.0.0"
+        },
+        "runtime": {
+          "Fitness.Web.ViewModels.dll": {}
         }
       }
     }
@@ -2100,6 +2110,11 @@
       "sha512": ""
     },
     "Fitness.Services.Messaging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Fitness.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

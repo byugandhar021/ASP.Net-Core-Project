@@ -6,6 +6,6 @@
 
     public class AllViewModel
     {
-        public IEnumerable<Diet> Diets { get; set; }
+        public IEnumerable<SingleDietViewModel> Diets { get; set; }
     }
 }

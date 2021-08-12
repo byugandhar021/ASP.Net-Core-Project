@@ -6,13 +6,14 @@
 
     using Fitness.Data.Common.Repositories;
     using Fitness.Data.Models;
+    using Fitness.Services.Mapping;
     using Fitness.Web.ViewModels.Diet;
 
-    public class CategoryService : ICategoryService
+    public class DietsService : IDietsService
     {
         private readonly IDeletableEntityRepository<Diet> dietRepository;
 
-        public CategoryService(IDeletableEntityRepository<Diet> dietRepository)
+        public DietsService(IDeletableEntityRepository<Diet> dietRepository)
         {
             this.dietRepository = dietRepository;
         }
@@ -32,26 +33,32 @@
             await this.dietRepository.SaveChangesAsync();
         }
 
-        public async Task DeleteDietById(string dietId)
+        public async Task DeleteDietByIdAsync(string dietId)
         {
             var diet = this.dietRepository.All().Where(x => x.Id == dietId).FirstOrDefault();
             this.dietRepository.Delete(diet);
             await this.dietRepository.SaveChangesAsync();
         }
 
-        public IEnumerable<Diet> GetAllDiets()
+        public IEnumerable<T> GetAllDiets<T>()
         {
             var allDiets = this.dietRepository
-                .All()
-                .OrderByDescending(x => x.CreatedOn)
+                .AllAsNoTracking()
+                .OrderByDescending(x => x.Id)
+                .To<T>()
                 .ToList();
 
             return allDiets;
         }
 
-        public Diet GetDietById(string dietId)
+        public T GetDietById<T>(string dietId)
         {
-            var diet = this.dietRepository.All().Where(x => x.Id == dietId).FirstOrDefault();
+            var diet = this.dietRepository
+                .AllAsNoTracking()
+                .Where(x => x.Id == dietId)
+                .To<T>()
+                .FirstOrDefault();
+
             return diet;
         }
 

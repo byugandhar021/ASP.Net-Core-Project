@@ -2141,7 +2141,8 @@
         "dependencies": {
           "Fitness.Data.Common": "1.0.0",
           "Fitness.Data.Models": "1.0.0",
-          "Fitness.Services.Mapping": "1.0.0"
+          "Fitness.Services.Mapping": "1.0.0",
+          "Fitness.Web.ViewModels": "1.0.0"
         },
         "runtime": {
           "Fitness.Services.Data.dll": {}
