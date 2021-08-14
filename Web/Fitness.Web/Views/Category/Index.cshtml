@@ -6,10 +6,12 @@
         Dropdown button
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        @foreach (var item in Model)
+        @foreach (var item in Model.Categories)
         {
-            <a class="dropdown-item" href="#">@item.Name</a>
+        <a class="dropdown-item" href="#">@item.Name</a>
         }
     </div>
 </div>
-<button asp-area="" asp-action="Create" asp-controller="Category"> Create new Category</button>
+<form asp-controller="Category" asp-action="Create" method="get">
+    <button class="btn bg-success"> Create new Category</button>
+</form>

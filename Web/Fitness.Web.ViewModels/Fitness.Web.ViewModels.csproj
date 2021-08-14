@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Gym\" />
     <Folder Include="Nutrition\" />
   </ItemGroup>
 

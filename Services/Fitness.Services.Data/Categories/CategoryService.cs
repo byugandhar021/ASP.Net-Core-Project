@@ -6,6 +6,7 @@
 
     using Fitness.Data.Common.Repositories;
     using Fitness.Data.Models;
+    using Fitness.Services.Mapping;
     using Fitness.Web.ViewModels.Diet;
 
     public class CategoryService : ICategoryService
@@ -35,7 +36,7 @@
             await this.categoryRepository.SaveChangesAsync();
         }
 
-        public IEnumerable<Category> GetAllCategory()
+        public IEnumerable<Category> GetAllCategories()
         {
             var allDiets = this.categoryRepository
                 .All()
@@ -43,6 +44,17 @@
                 .ToList();
 
             return allDiets;
+        }
+
+        public IEnumerable<T> GetAllCategories<T>()
+        {
+            var allcategories = this.categoryRepository
+                .AllAsNoTracking()
+                .OrderByDescending(x => x.Id)
+                .To<T>()
+                .ToList();
+
+            return allcategories;
         }
 
         public Category GetCategoryById(string dietId)

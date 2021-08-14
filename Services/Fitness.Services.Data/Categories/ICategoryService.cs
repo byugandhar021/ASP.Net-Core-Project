@@ -8,7 +8,9 @@
 
     public interface ICategoryService
     {
-        IEnumerable<Category> GetAllCategory();
+        IEnumerable<Category> GetAllCategories();
+
+        IEnumerable<T> GetAllCategories<T>();
 
         Task CreateCategoryAsync(string categoryName);
 

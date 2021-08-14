@@ -7,7 +7,7 @@
 
     public interface IGymsService
     {
-        IEnumerable<Gym> GetAllGyms();
+        IEnumerable<T> GetAllGyms<T>();
 
         Task CreateGymAsync(string userId);
 

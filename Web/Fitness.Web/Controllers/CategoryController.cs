@@ -3,6 +3,7 @@
     using System.Threading.Tasks;
 
     using Fitness.Services.Data.Categories;
+    using Fitness.Web.ViewModels.Category;
     using Microsoft.AspNetCore.Mvc;
 
     public class CategoryController : Controller
@@ -14,9 +15,15 @@
             this.categoryService = categoryService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string category)
         {
-            return this.View(this.categoryService.GetAllCategory());
+            var name = ControllerContext.ActionDescriptor.EndpointMetadata;
+
+            var allViewModel = new AllViewModel
+            {
+                Categories = this.categoryService.GetAllCategories<CategoryViewModel>(),
+            };
+            return this.View(allViewModel);
         }
 
         public IActionResult Create()

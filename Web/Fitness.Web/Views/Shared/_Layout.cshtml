@@ -6,10 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@this.ViewData["Title"] - @GlobalConstants.SystemName</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
 </head>
 <body>
+    <!--<header>-->
+    <!-- Header Start -->
+    <!--<div class="header-area header-transparent">
+        <div class="main-header header-sticky">
+            <div class="container-fluid">
+                <div class="menu-wrapper d-flex align-items-center justify-content-between">-->
+    <!-- Main-menu -->
+    <!--<div class="main-menu f-right d-none d-lg-block">
+                        <nav>
+                            <ul id="navigation">
+                                @if (!this.User.Identity.IsAuthenticated)
+                                {
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Home" asp-action="About">About</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Diet" asp-action="All">Diets</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Exercise" asp-action="All">Exercises</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Nutrition" asp-action="All">Nutritions</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-area="" asp-controller="Gym" asp-action="All">Gyms</a>
+                                    </li>
+                                    @if (this.User.IsInRole("admin"))
+                                    {
+                                        <li class="nav-item">
+                                            <a asp-area="" asp-controller="Role" asp-action="Index" title="Admin">Admin Panel</a>
+                                        </li>
+                                    }
+                                }
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- Header End -->
+    <!--</header>-->
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -58,14 +108,29 @@
             </div>
         </nav>
     </header>
-    
+
     <div class="container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @this.RenderBody()
         </main>
     </div>
-    
+    <!--<main role="main">
+        <partial name="_CookieConsentPartial" />
+        <div class="slider-area position-relative">
+            <div class="slider-active">-->
+    <!-- Single Slider -->
+    <!--<div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            @this.RenderBody()
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>-->
+
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; @DateTime.Now.Year - @GlobalConstants.SystemName - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
