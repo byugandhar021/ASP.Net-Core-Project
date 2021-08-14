@@ -13,6 +13,7 @@
     public class PrivateRole
     {
         public string Name { get; set; }
+
         public string Id { get; set; }
     }
 

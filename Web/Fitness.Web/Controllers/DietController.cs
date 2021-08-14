@@ -49,5 +49,16 @@
             await this.dietsService.CreateDietAsync(userId, model);
             return this.RedirectToAction("All");
         }
+
+        public IActionResult Details(string id)
+        {
+            var viewModel = this.dietsService.GetDietById<DetailsViewModel>(id);
+            return this.View(viewModel);
+        }
+
+        public IActionResult Edit()
+        {
+            return this.View();
+        }
     }
 }

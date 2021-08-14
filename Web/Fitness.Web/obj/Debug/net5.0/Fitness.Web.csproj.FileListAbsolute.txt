@@ -461,7 +461,6 @@ D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Fitness.Web.gen
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Diet\All.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Exercise\All.cshtml.g.cs
-D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Gyms\All.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Nutrition\All.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs
@@ -476,3 +475,6 @@ D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Areas\Ide
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Diet\Create.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Gym\All.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Diet\Details.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Diet\Edit.cshtml.g.cs

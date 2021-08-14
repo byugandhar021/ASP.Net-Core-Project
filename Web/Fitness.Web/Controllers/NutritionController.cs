@@ -1,16 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Fitness.Web.Controllers
+﻿namespace Fitness.Web.Controllers
 {
+
+    using Microsoft.AspNetCore.Mvc;
+
     public class NutritionController : Controller
     {
-        public IActionResult Index()
+        public IActionResult All()
         {
-            return View();
+            return this.View();
         }
     }
 }

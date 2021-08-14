@@ -1,24 +1,26 @@
 ﻿@model Fitness.Web.ViewModels.Diet.AllViewModel
 
 @{
-    this.ViewData["Title"] = "All";
+    this.ViewData["Title"] = "All Diets";
 }
 
 <h1>@this.ViewData["Title"]</h1>
-
-<h2>eheel</h2>
+<hr />
+<br/>
 
 <div class="row">
-    <div class="media col-md-4">
-        <ul>
-            @foreach (var diet in Model.Diets)
-            {
-                <li>
-                    <p>@diet.Name</p>
-                    <p>@diet.Duration</p>
-                    <p>@diet.Description</p>
-                </li>
-            }
-        </ul>
-    </div>
+    @foreach (var diet in Model.Diets)
+    {
+        <div class="media col-md-4">
+            <div class="media-body">
+                <h5 class="mt-0">@diet.Name</h5>
+                @diet.Description
+                <br/>
+                <br/>
+                <a class="btn btn-dark" asp-action="Details" asp-route-id="@diet.Id">View more details</a>
+                <hr />
+            </div>
+        </div>
+    }
 </div>
+<a asp-controller="Diet" asp-action="Create" class="btn btn-dark">Add new diet</a>
