@@ -1,8 +1,9 @@
-﻿<div>
-    <form action="/Category/Create" method="post">
-
-        <label>Category</label>
-        <input type="text" name="name"/>
+﻿@model  Fitness.Web.ViewModels.Category.CreateInputModel;
+<div>
+    <form action="/Category/Create?type=@Model.CategoryType" method="post">
+        <label asp-for="Name">Category</label>
+        <input asp-for="Name" type="text" name="name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
         <button type="submit"> Create</button>
     </form>
 </div>

@@ -188,7 +188,7 @@
         {
             foreach (IdentityError error in result.Errors)
             {
-                this.ModelState.AddModelError("error in RoLE kontroler", error.Description);
+                this.ModelState.AddModelError("Invalid Role", error.Description);
             }
         }
     }

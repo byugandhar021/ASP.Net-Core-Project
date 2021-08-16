@@ -7,7 +7,7 @@
     using Fitness.Data.Common.Repositories;
     using Fitness.Data.Models;
     using Fitness.Services.Mapping;
-    using Fitness.Web.ViewModels.Diet;
+    using Fitness.Web.ViewModels.Category;
 
     public class CategoryService : ICategoryService
     {
@@ -18,11 +18,11 @@
             this.categoryRepository = categoryRepository;
         }
 
-        public async Task CreateCategoryAsync(string categoryName)
+        public async Task CreateCategoryAsync(CreateInputModel categoryModel)
         {
             var category = new Category
             {
-                Name = categoryName,
+                Name = categoryModel.Name,
             };
 
             await this.categoryRepository.AddAsync(category);

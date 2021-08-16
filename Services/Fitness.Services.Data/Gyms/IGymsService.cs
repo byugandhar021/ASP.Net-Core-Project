@@ -4,12 +4,13 @@
     using System.Threading.Tasks;
 
     using Fitness.Data.Models;
+    using Fitness.Web.ViewModels.Gym;
 
     public interface IGymsService
     {
         IEnumerable<T> GetAllGyms<T>();
 
-        Task CreateGymAsync(string userId);
+        Task CreateGymAsync(string userId, CreateInputModel inputModel);
 
         Gym GetGymById(string gymId);
 

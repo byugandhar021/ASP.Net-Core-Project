@@ -7,6 +7,7 @@
     using Fitness.Data.Common.Repositories;
     using Fitness.Data.Models;
     using Fitness.Services.Mapping;
+    using Fitness.Web.ViewModels.Gym;
 
     public class GymsService : IGymsService
     {
@@ -17,9 +18,20 @@
             this.gymRepository = gymRepository;
         }
 
-        public Task CreateGymAsync(string userId)
+        public async Task CreateGymAsync(string userId, CreateInputModel inputModel)
         {
-            throw new System.NotImplementedException();
+            var gym = new Gym
+            {
+                Name = inputModel.Name,
+                Description = inputModel.Description,
+                Location = inputModel.Location,
+                WorkTime = inputModel.WorkTime,
+                ImageUrl = inputModel.ImageUrl,
+                UserId = userId,
+            };
+
+            await this.gymRepository.AddAsync(gym);
+            await this.gymRepository.SaveChangesAsync();
         }
 
         public Task DeleteGymById(string gymId)

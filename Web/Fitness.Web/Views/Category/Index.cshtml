@@ -1,5 +1,4 @@
-﻿
-<h1>Pederas</h1>
+﻿@model Fitness.Web.ViewModels.Category.AllViewModel
 
 <div class="dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -8,10 +7,11 @@
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         @foreach (var item in Model.Categories)
         {
-        <a class="dropdown-item" href="#">@item.Name</a>
+            <a class="dropdown-item" href="#">@item.Name</a>
         }
     </div>
 </div>
-<form asp-controller="Category" asp-action="Create" method="get">
-    <button class="btn bg-success"> Create new Category</button>
-</form>
+
+<div class="button-holder">
+    <a href="/Category/Create?categorytype=@Model.CategoryType" class="btn btn-success">Create Category</a>
+</div>

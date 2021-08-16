@@ -1,8 +1,12 @@
 ﻿namespace Fitness.Web.Controllers
 {
+    using System.Collections.Generic;
+    using System.Diagnostics;
+    using System.Linq;
     using System.Threading.Tasks;
 
     using Fitness.Services.Data.Categories;
+    using Fitness.Web.ViewModels;
     using Fitness.Web.ViewModels.Category;
     using Microsoft.AspNetCore.Mvc;
 
@@ -15,27 +19,62 @@
             this.categoryService = categoryService;
         }
 
-        public IActionResult Index(string category)
+        public IActionResult Index(string categorytype)
         {
-            var name = ControllerContext.ActionDescriptor.EndpointMetadata;
-
-            var allViewModel = new AllViewModel
+            if (!string.IsNullOrWhiteSpace(categorytype))
             {
-                Categories = this.categoryService.GetAllCategories<CategoryViewModel>(),
-            };
-            return this.View(allViewModel);
+                var categories = new List<CategoryViewModel>();
+
+                switch (categorytype)
+                {
+                    case "diet":
+                        categories = this.categoryService.GetAllCategories<CategoryViewModel>().Where(s => s.CategoryType.ToString().ToLower() == "diet").ToList();
+                        break;
+                    case "exercise":
+                        categories = this.categoryService.GetAllCategories<CategoryViewModel>().Where(s => s.CategoryType.ToString().ToLower() == "exercise").ToList();
+                        break;
+                    case "nutrition":
+                        categories = this.categoryService.GetAllCategories<CategoryViewModel>().Where(s => s.CategoryType.ToString().ToLower() == "nutrition").ToList();
+                        break;
+
+                    default:
+                        break;
+                }
+
+                var allViewModel = new AllViewModel
+                {
+                    Categories = categories,
+                    CategoryType = categorytype,
+                };
+                return this.View(allViewModel);
+            }
+
+            return this.Error();
         }
 
-        public IActionResult Create()
+        [HttpGet]
+        public IActionResult Create(string categorytype)
         {
-            return this.View();
+            var model = new CreateInputModel
+            {
+                CategoryType = categorytype,
+            };
+            return this.View("Create", model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(string name)
+        [Route("Category/Create/{type}")]
+        public async Task<IActionResult> Create(/*[FromRoute] string type*/)
         {
-            await this.categoryService.CreateCategoryAsync(name);
+           // await this.categoryService.CreateCategoryAsync(model);
             return this.RedirectToAction("Create", "DietController");
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return this.View(
+                new ErrorViewModel { RequestId = Activity.Current?.Id ?? this.HttpContext.TraceIdentifier });
         }
     }
 }

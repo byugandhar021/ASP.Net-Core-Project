@@ -4,7 +4,7 @@
     using System.Threading.Tasks;
 
     using Fitness.Data.Models;
-    using Fitness.Web.ViewModels.Diet;
+    using Fitness.Web.ViewModels.Category;
 
     public interface ICategoryService
     {
@@ -12,7 +12,7 @@
 
         IEnumerable<T> GetAllCategories<T>();
 
-        Task CreateCategoryAsync(string categoryName);
+        Task CreateCategoryAsync(CreateInputModel categoryName);
 
         Category GetCategoryById(string dietId);
 

@@ -5,5 +5,7 @@
     public class AllViewModel
     {
         public IEnumerable<CategoryViewModel> Categories { get; set; }
+
+        public string CategoryType { get; set; }
     }
 }
