@@ -1,7 +1,43 @@
 ﻿@model Fitness.Web.ViewModels.Gym.AllViewModel
 
-@{ 
+@{
     this.ViewData["Title"] = "All Gyms";
 }
 
 <h1>@this.ViewData["Title"]</h1>
+<hr />
+<br />
+
+@*<div class="row">
+        @foreach (var gym in this.Model.Gyms)
+        {
+            <div class="media col-md-4">
+                <img src="@gym.ImageUrl" width="300" class="mr-3 img-responsive">
+                <div class="media-body">
+                    <h3 class="mt-0"><a asp-action="Details" asp-route-id="@gym.Id">@gym.Name</a></h3>
+                    <h4 class="mt-0">@gym.WorkTime</h4>
+                    <h4 class="mt-0">@gym.Location</h4>
+                </div>
+            </div>
+        }
+    </div>*@
+
+<div class="container">
+    <div class="row">
+        @foreach (var gym in Model.Gyms)
+        {
+            <div class="col-md-4">
+                <div class="single-cat text-center mb-30 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="cat-icon">
+                        <img src="@gym.ImageUrl" alt="" width="300" class="mr-3 img-responsive">
+                    </div>
+                    <div class="cat-cap">
+                        <h3><a asp-action="Details" asp-route-id="@gym.Id">@gym.Name</a></h3>
+                        <p>@gym.WorkTime</p>
+                        <p>@gym.Location</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

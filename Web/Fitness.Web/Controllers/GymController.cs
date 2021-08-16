@@ -1,5 +1,8 @@
 ﻿namespace Fitness.Web.Controllers
 {
+    using System.Security.Claims;
+    using System.Threading.Tasks;
+
     using Fitness.Services.Data.Gyms;
     using Fitness.Web.ViewModels.Gym;
     using Microsoft.AspNetCore.Mvc;
@@ -26,6 +29,26 @@
         public IActionResult Create()
         {
             return this.View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateInputModel inputModel)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                return this.View();
+            }
+
+            var userId = this.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            await this.gymsService.CreateGymAsync(userId, inputModel);
+            return this.RedirectToAction("All");
+        }
+
+        public IActionResult Details(string id)
+        {
+            var viewModel = this.gymsService.GetGymById<DetailsViewModel>(id);
+            return this.View(viewModel);
         }
     }
 }

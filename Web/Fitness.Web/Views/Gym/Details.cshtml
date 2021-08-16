@@ -1,0 +1,29 @@
+﻿@model Fitness.Web.ViewModels.Gym.DetailsViewModel
+
+@{
+    this.ViewData["Title"] = "Gym Details";
+}
+
+<h1>@this.ViewData["Title"]</h1>
+<hr />
+<br />
+<div class="row">
+    <div class="col-lg-8 posts-list">
+        <div class="single-post">
+            <div class="feature-img">
+                <img class="img-fluid" src="@Model.ImageUrl" alt="">
+            </div>
+            <br/>
+            <h2 style="color: #2d2d2d;">
+                @Model.Name
+            </h2>
+            <ul class="blog-info-link mt-3 mb-4">
+                <li>@Model.WorkTime</i></li>
+                <li>@Model.Location</li>
+            </ul>
+            <p class="excert">@Model.Description</p>
+        </div>
+        <a asp-action="Edit" class="nav-link btn btn-link text-dark">Edit diet</a>
+        <a asp-action="Delete" class="nav-link btn btn-link text-dark">Delete diet</a>
+    </div>
+</div>

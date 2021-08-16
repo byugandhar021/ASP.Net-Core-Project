@@ -4538,7 +4538,7 @@ hr {
   -o-transition: 0.2s;
   transition: 0.2s;
   text-transform: uppercase;
-  color: #fff;
+  color: black;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -4586,7 +4586,11 @@ hr {
 
 /* line 59, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_team.scss */
 .team-area .single-cat:hover .cat-cap h5 {
-  color: #000;
+  color: black;
+}
+
+.team-area .single-cat:hover .cat-cap h3 {
+    color: black;
 }
 
 /* line 5, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_footer.scss */

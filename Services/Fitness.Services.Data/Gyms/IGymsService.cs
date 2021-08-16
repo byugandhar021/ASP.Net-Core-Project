@@ -12,7 +12,7 @@
 
         Task CreateGymAsync(string userId, CreateInputModel inputModel);
 
-        Gym GetGymById(string gymId);
+        T GetGymById<T>(string gymId);
 
         Task UpdateGymAsync();
 

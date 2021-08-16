@@ -43,16 +43,22 @@
         {
             var gyms = this.gymRepository
                 .AllAsNoTracking()
-                .OrderByDescending(x => x.Id)
+                .OrderByDescending(x => x.CreatedOn)
                 .To<T>()
                 .ToList();
 
             return gyms;
         }
 
-        public Gym GetGymById(string gymId)
+        public T GetGymById<T>(string gymId)
         {
-            throw new System.NotImplementedException();
+            var gym = this.gymRepository
+                .AllAsNoTracking()
+                .Where(x => x.Id == gymId)
+                .To<T>()
+                .FirstOrDefault();
+
+            return gym;
         }
 
         public Task UpdateGymAsync()
