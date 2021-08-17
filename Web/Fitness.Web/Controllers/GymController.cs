@@ -50,5 +50,30 @@
             var viewModel = this.gymsService.GetGymById<DetailsViewModel>(id);
             return this.View(viewModel);
         }
+
+        public IActionResult Edit(string id)
+        {
+            var inputModel = this.gymsService.GetGymById<EditInputModel>(id);
+            return this.View(inputModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(string id, EditInputModel inputModel)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                return this.View(inputModel);
+            }
+
+            await this.gymsService.UpdateGymAsync(id, inputModel);
+            return this.RedirectToAction(nameof(this.Details), new { id });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(string id)
+        {
+            await this.gymsService.DeleteGymAsync(id);
+            return this.RedirectToAction(nameof(this.All));
+        }
     }
 }

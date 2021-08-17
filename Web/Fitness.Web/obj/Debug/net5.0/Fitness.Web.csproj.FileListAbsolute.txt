@@ -480,3 +480,4 @@ D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Die
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Diet\Edit.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Gym\Create.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Gym\Details.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Gym\Edit.cshtml.g.cs

@@ -34,9 +34,13 @@
             await this.gymRepository.SaveChangesAsync();
         }
 
-        public Task DeleteGymById(string gymId)
+        public async Task DeleteGymAsync(string gymId)
         {
-            throw new System.NotImplementedException();
+            var gym = this.gymRepository
+                .All()
+                .FirstOrDefault(x => x.Id == gymId);
+            this.gymRepository.Delete(gym);
+            await this.gymRepository.SaveChangesAsync();
         }
 
         public IEnumerable<T> GetAllGyms<T>()
@@ -61,9 +65,19 @@
             return gym;
         }
 
-        public Task UpdateGymAsync()
+        public async Task UpdateGymAsync(string id, EditInputModel inputModel)
         {
-            throw new System.NotImplementedException();
+            var gym = this.gymRepository
+                .All()
+                .FirstOrDefault(x => x.Id == id);
+
+            gym.Name = inputModel.Name;
+            gym.Description = inputModel.Description;
+            gym.Location = inputModel.Location;
+            gym.WorkTime = inputModel.WorkTime;
+            gym.ImageUrl = inputModel.ImageUrl;
+
+            await this.gymRepository.SaveChangesAsync();
         }
     }
 }

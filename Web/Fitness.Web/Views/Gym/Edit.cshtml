@@ -1,12 +1,13 @@
-﻿@model Fitness.Web.ViewModels.Gym.CreateInputModel
-   
+﻿@model Fitness.Web.ViewModels.Gym.EditInputModel
+
 @{
-    this.ViewData["Title"] = "All gyms";
+    this.ViewData["Title"] = "Edit gym";
 }
 
 <h1>@this.ViewData["Title"]</h1>
-<hr/>
-<br/>
+<hr />
+<br />
+
 <form method="post">
     <hr />
     <div asp-validation-summary="All" class="text-danger"></div>
@@ -35,5 +36,5 @@
         <input asp-for="ImageUrl" class="form-control" />
         <span asp-validation-for="ImageUrl" class="text-danger"></span>
     </div>
-    <input type="submit" class="btn btn-dark" value="Create" />
+    <input type="submit" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-dark" value="Edit" />
 </form>

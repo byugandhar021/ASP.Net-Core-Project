@@ -14,8 +14,8 @@
 
         T GetGymById<T>(string gymId);
 
-        Task UpdateGymAsync();
+        Task UpdateGymAsync(string id, EditInputModel inputModel);
 
-        Task DeleteGymById(string gymId);
+        Task DeleteGymAsync(string gymId);
     }
 }
