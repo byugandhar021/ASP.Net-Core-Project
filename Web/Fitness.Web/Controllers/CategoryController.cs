@@ -63,11 +63,11 @@
         }
 
         [HttpPost]
-        [Route("Category/Create/{type}")]
-        public async Task<IActionResult> Create(/*[FromRoute] string type*/)
+        public async Task<IActionResult> Create(string category, CreateInputModel model)
         {
-           // await this.categoryService.CreateCategoryAsync(model);
-            return this.RedirectToAction("Create", "DietController");
+            model.CategoryType = category;
+            await this.categoryService.CreateCategoryAsync(model);
+            return this.RedirectToAction("Create", "Diet", new { category = model.Name });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

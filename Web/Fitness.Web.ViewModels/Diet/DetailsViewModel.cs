@@ -7,6 +7,8 @@
 
     public class DetailsViewModel : IMapFrom<Diet>
     {
+        public string Id { get; set; }
+
         public string Name { get; set; }
 
         public string Duration { get; set; }

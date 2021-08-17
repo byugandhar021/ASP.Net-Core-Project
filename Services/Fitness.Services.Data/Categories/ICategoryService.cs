@@ -19,5 +19,7 @@
         Task UpdateCategoryAsync(EditInputModel editInputModel);
 
         Task DeleteCategoryById(string dietId);
+
+        Category GetCategoryByName(string name);
     }
 }

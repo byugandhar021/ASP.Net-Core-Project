@@ -63,6 +63,12 @@
             return diet;
         }
 
+        public Category GetCategoryByName(string name)
+        {
+            var diet = this.categoryRepository.All().Where(x => x.Name == name).FirstOrDefault();
+            return diet;
+        }
+
         public async Task UpdateCategoryAsync(EditInputModel editInputModel)
         {
             var category = new Category();

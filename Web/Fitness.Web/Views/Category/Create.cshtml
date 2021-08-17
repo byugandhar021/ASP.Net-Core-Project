@@ -1,9 +1,32 @@
-﻿@model  Fitness.Web.ViewModels.Category.CreateInputModel;
+﻿@model Fitness.Web.ViewModels.Category.CreateInputModel;
 <div>
-    <form action="/Category/Create?type=@Model.CategoryType" method="post">
-        <label asp-for="Name">Category</label>
+    <form asp-action="Create" asp-controller="Category" asp-route-category="@Model.CategoryType" method="post">
+
+        <label asp-for="Name">Category Name</label>
         <input asp-for="Name" type="text" name="name" />
         <span asp-validation-for="Name" class="text-danger"></span>
-        <button type="submit"> Create</button>
+
+
+        <div id="category" style="display: none" onclick="MyFunc()">
+            <div style="display:block">
+                <label for="category"> You try to add diet!</label>
+                <input type="text" name="category" disabled value="@Model.CategoryType" />
+            </div>
+        </div>
+
+        <button class="btn btn-danger" style="display:block" onclick="myFunction()">Category Type</button>
+
+        <button type="submit" class="btn btn-primary"> Create</button>
     </form>
 </div>
+<script>
+    function myFunction() {
+        var categoryElement = document.getElementById('category');
+        if (categoryElement.style.display == "none") {
+            categoryElement.style.display = "inline";
+        }
+        else {
+            categoryElement.style.display = "none";
+        }
+    }
+</script>

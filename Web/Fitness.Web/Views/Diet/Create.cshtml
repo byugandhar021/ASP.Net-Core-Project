@@ -3,9 +3,11 @@
 @{
     this.ViewData["Title"] = "New Diet";
 }
+<h1>@this.ViewData["Title"]</h1>
+<hr />
+<br />
 
-<form method="post">
-    <h1>@this.ViewData["Title"]</h1>
+<form method="post" asp-route-category="@Model.Category">
     <hr />
     <div asp-validation-summary="All" class="text-danger"></div>
     <div class="form-group">

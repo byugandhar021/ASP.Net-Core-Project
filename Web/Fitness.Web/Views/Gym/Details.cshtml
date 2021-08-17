@@ -23,7 +23,7 @@
             </ul>
             <p class="excert">@Model.Description</p>
         </div>
-        <div class="btn-group   ">
+        <div class="btn-group">
             <a asp-action="Edit" asp-route-id="@Model.Id" class="nav-link btn btn-link text-dark">Edit gym</a>
             <form method="post">
                 <input type="submit" asp-action="Delete" asp-route-id="@Model.Id" class="nav-link btn btn-link text-dark" value="Delete gym" />

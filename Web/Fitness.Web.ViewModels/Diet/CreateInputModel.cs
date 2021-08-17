@@ -15,7 +15,8 @@
         [Required]
         public string Description { get; set; }
 
-        //[Required]
-        //public string CategoryId { get; set; }
+        public string CategoryId { get; set; }
+
+        public string Category { get; set; }
     }
 }

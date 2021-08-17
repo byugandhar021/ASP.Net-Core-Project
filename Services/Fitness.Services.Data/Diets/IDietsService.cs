@@ -13,7 +13,7 @@
 
         T GetDietById<T>(string dietId);
 
-        Task UpdateDietAsync(EditInputModel editInputModel);
+        Task UpdateDietAsync(string id, EditInputModel editInputModel);
 
         Task DeleteDietByIdAsync(string dietId);
     }

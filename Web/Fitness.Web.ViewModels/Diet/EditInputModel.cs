@@ -3,8 +3,10 @@
     using System.ComponentModel.DataAnnotations;
 
     using Fitness.Data.Common;
+    using Fitness.Data.Models;
+    using Fitness.Services.Mapping;
 
-    public class EditInputModel
+    public class EditInputModel : IMapFrom<Diet>
     {
         public string Id { get; set; }
 

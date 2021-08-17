@@ -35,7 +35,10 @@
 
         public async Task DeleteDietByIdAsync(string dietId)
         {
-            var diet = this.dietRepository.All().Where(x => x.Id == dietId).FirstOrDefault();
+            var diet = this.dietRepository
+                .All()
+                .FirstOrDefault(x => x.Id == dietId);
+
             this.dietRepository.Delete(diet);
             await this.dietRepository.SaveChangesAsync();
         }
@@ -62,9 +65,11 @@
             return diet;
         }
 
-        public async Task UpdateDietAsync(EditInputModel editInputModel)
+        public async Task UpdateDietAsync(string id, EditInputModel editInputModel)
         {
-            var diet = this.dietRepository.All().Where(x => x.Id == editInputModel.Id).FirstOrDefault();
+            var diet = this.dietRepository
+                .All()
+                .FirstOrDefault(x => x.Id == id);
 
             diet.Name = editInputModel.Name;
             diet.Duration = editInputModel.Duration;
