@@ -1,1 +1,29 @@
-﻿nutrition works
+﻿@model Fitness.Web.ViewModels.Nutrition.AllNutritionViewModel
+
+@{
+    this.ViewData["Title"] = "All Nutritions";
+}
+
+<h1>@this.ViewData["Title"]</h1>
+<hr />
+<br />
+
+<div class="row">
+    @foreach (var nutrition in Model.Nutritions)
+    {
+        <div class="media col-md-4">
+            <div class="media-body">
+                <h5 class="mt-0">@nutrition.Name</h5>
+                @nutrition.Description
+                <br />
+                <br />
+                <a class="btn btn-dark" asp-action="Details" asp-route-id="@nutrition.Id">View more details</a>
+                <hr />
+            </div>
+        </div>
+    }
+</div>
+
+<div class="button-holder">
+    <a href="/Category/Index?categorytype=nutrition" class="btn btn-success">Create Nutrition</a>
+</div>

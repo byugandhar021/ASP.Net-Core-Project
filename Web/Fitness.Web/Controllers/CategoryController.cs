@@ -67,7 +67,22 @@
         {
             model.CategoryType = category;
             await this.categoryService.CreateCategoryAsync(model);
-            return this.RedirectToAction("Create", "Diet", new { category = model.Name });
+
+            var controller = string.Empty;
+            switch (category)
+            {
+                case "diet":
+                    controller = "Diet";
+                    break;
+                case "exercise":
+                    controller = "Exercise";
+                    break;
+                case "nutrition":
+                    controller = "Nutrition";
+                    break;
+            }
+
+            return this.RedirectToAction("Create", controller, new { category = model.Name });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

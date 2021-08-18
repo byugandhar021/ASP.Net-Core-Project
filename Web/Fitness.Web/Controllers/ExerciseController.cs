@@ -44,5 +44,11 @@
             await this.exercisesService.CreateExerciseAsync(userId, inputModel);
             return this.RedirectToAction(nameof(this.All));
         }
+
+        public IActionResult Details(string id)
+        {
+            var viewModel = this.exercisesService.GetExerciseById<DetailsViewModel>(id);
+            return this.View(viewModel);
+        }
     }
 }

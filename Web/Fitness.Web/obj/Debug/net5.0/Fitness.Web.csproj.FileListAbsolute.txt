@@ -482,3 +482,7 @@ D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Gym
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Gym\Details.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Gym\Edit.cshtml.g.cs
 D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Exercise\Create.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Exercise\Details.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Nutrition\Create.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Nutrition\Details.cshtml.g.cs
+D:\Desktop\ASP.Net-Core-Project\Web\Fitness.Web\obj\Debug\net5.0\Razor\Views\Nutrition\Edit.cshtml.g.cs

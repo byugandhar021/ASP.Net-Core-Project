@@ -1,0 +1,31 @@
+﻿@model Fitness.Web.ViewModels.Exercise.DetailsViewModel;
+
+@{
+    this.ViewData["Title"] = "Details Exercise";
+}
+
+<h1>@this.ViewData["Title"]</h1>
+<hr />
+<br />
+<div class="row">
+    <div class="col-lg-8 posts-list">
+        <div class="single-post">
+            <br />
+            <h2 style="color: #2d2d2d;">
+                @Model.Name
+            </h2>
+            <ul class="blog-info-link mt-3 mb-4">
+
+                <iframe src="https://www.youtube.com/embed/@Model.Video" frameborder="0"></iframe>
+                <li>@Model.Description</li>
+            </ul>
+            <p class="excert">@Model.Description</p>
+        </div>
+        <div class="btn-group">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="nav-link btn btn-link text-dark">Edit gym</a>
+            <form method="post">
+                <input type="submit" asp-action="Delete" asp-route-id="@Model.Id" class="nav-link btn btn-link text-dark" value="Delete gym" />
+            </form>
+        </div>
+    </div>
+</div>

@@ -47,9 +47,15 @@
                 .ToList();
         }
 
-        public Exercise GetExerciseById(string exerciseId)
+        public T GetExerciseById<T>(string exerciseId)
         {
-            throw new System.NotImplementedException();
+            var exercise = this.exerciseRepository
+                .AllAsNoTracking()
+                .Where(x => x.Id == exerciseId)
+                .To<T>()
+                .FirstOrDefault();
+
+            return exercise;
         }
 
         public Task UpdateExerciseAsync()

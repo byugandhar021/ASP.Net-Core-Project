@@ -48,11 +48,12 @@
                 return this.View();
             }
 
-            var currentCategory = this.categoryService.GetCategoryByName(category);
-            model.CategoryId = currentCategory.Id;
+            var ccategory = this.categoryService.GetCategoryByName(category);
+            model.CategoryId = ccategory.Id;
 
             var userId = this.User.FindFirst(ClaimTypes.NameIdentifier).Value;
 
+            model.UserId = userId;
             await this.dietsService.CreateDietAsync(userId, model);
             return this.RedirectToAction("All");
         }

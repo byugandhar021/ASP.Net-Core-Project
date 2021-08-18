@@ -4,16 +4,17 @@
     using System.Threading.Tasks;
 
     using Fitness.Data.Models;
+    using Fitness.Web.ViewModels.Nutrition;
 
     public interface INutritionsService
     {
-        IEnumerable<Nutrition> GetAllNutritions();
+        IEnumerable<T> GetAllNutritions<T>();
 
-        Task CreateNutritionAsync(string userId);
+        Task CreateNutritionAsync(string userId, CreateNutritionInputModel model);
 
-        Nutrition GetNutritionById(string nutritionId);
+        T GetDietById<T>(string nutritionId);
 
-        Task UpdateNutritionAsync();
+        Task UpdateNutritionAsync(string id, EditNutritionInputModel model);
 
         Task DeleteNutritionById(string nutritionId);
     }

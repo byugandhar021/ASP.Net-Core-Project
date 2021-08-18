@@ -12,7 +12,7 @@
 
         Task CreateExerciseAsync(string userId, CreateInputModel inputModel);
 
-        Exercise GetExerciseById(string exerciseId);
+        T GetExerciseById<T>(string exerciseId);
 
         Task UpdateExerciseAsync();
 
