@@ -2,11 +2,10 @@
 {
     using System.Security.Claims;
     using System.Threading.Tasks;
-    using Fitness.Data.Models;
+
     using Fitness.Services.Data.Categories;
     using Fitness.Services.Data.Diets;
     using Fitness.Web.ViewModels.Diet;
-    using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
 
     public class DietController : BaseController
@@ -49,8 +48,8 @@
                 return this.View();
             }
 
-            var category = this.categoryService.GetCategoryByName(category);
-            model.CategoryId = roleId.Id;
+            var currentCategory = this.categoryService.GetCategoryByName(category);
+            model.CategoryId = currentCategory.Id;
 
             var userId = this.User.FindFirst(ClaimTypes.NameIdentifier).Value;
 
@@ -79,7 +78,6 @@
             }
 
             var userId = this.User.FindFirst(ClaimTypes.NameIdentifier).Value;
-            inputModel.UserId = userId;
 
             await this.dietsService.UpdateDietAsync(id, inputModel);
             return this.RedirectToAction(nameof(this.Details), new { id });

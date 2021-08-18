@@ -6,6 +6,8 @@
 
     using Fitness.Data.Common.Repositories;
     using Fitness.Data.Models;
+    using Fitness.Services.Mapping;
+    using Fitness.Web.ViewModels.Exercise;
 
     public class ExercisesService : IExercisesService
     {
@@ -16,9 +18,19 @@
             this.exerciseRepository = deletableEntityRepository;
         }
 
-        public Task CreateExerciseAsync(string userId)
+        public async Task CreateExerciseAsync(string userId, CreateInputModel inputModel)
         {
-            throw new System.NotImplementedException();
+            var exercise = new Exercise
+            {
+                Name = inputModel.Name,
+                Video = inputModel.Video,
+                Description = inputModel.Description,
+                UserId = userId,
+                CategoryId = "05cece71-9d11-4c6a-96a2-4115e546832b",
+            };
+
+            await this.exerciseRepository.AddAsync(exercise);
+            await this.exerciseRepository.SaveChangesAsync();
         }
 
         public Task DeleteExerciseById(string exerciseId)
@@ -26,12 +38,13 @@
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Exercise> GetAllExercises()
+        public IEnumerable<T> GetAllExercises<T>()
         {
             return this.exerciseRepository
-                 .All()
-                 .OrderByDescending(x => x.CreatedOn)
-                 .ToList();
+                .AllAsNoTracking()
+                .OrderByDescending(x => x.CreatedOn)
+                .To<T>()
+                .ToList();
         }
 
         public Exercise GetExerciseById(string exerciseId)

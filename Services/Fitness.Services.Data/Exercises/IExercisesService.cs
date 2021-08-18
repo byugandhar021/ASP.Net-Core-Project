@@ -4,12 +4,13 @@
     using System.Threading.Tasks;
 
     using Fitness.Data.Models;
+    using Fitness.Web.ViewModels.Exercise;
 
     public interface IExercisesService
     {
-        IEnumerable<Exercise> GetAllExercises();
+        IEnumerable<T> GetAllExercises<T>();
 
-        Task CreateExerciseAsync(string userId);
+        Task CreateExerciseAsync(string userId, CreateInputModel inputModel);
 
         Exercise GetExerciseById(string exerciseId);
 

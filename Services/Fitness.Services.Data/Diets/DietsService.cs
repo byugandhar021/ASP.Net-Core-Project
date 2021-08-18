@@ -74,7 +74,6 @@
             diet.Name = editInputModel.Name;
             diet.Duration = editInputModel.Duration;
             diet.Description = editInputModel.Description;
-            diet.UserId = editInputModel.UserId;
 
             this.dietRepository.Update(diet);
             await this.dietRepository.SaveChangesAsync();

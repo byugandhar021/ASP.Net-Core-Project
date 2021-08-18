@@ -1,20 +1,11 @@
 ﻿namespace Fitness.Web.ViewModels.Exercise
 {
-    using Fitness.Data.Models;
-    using Fitness.Services.Mapping;
+    using System.Collections.Generic;
 
-    public class AllViewModel : IMapFrom<Exercise>
+    public class AllViewModel
     {
-        public string Name { get; set; }
+        public string Id { get; set; }
 
-        public string Description { get; set; }
-
-        public string Video { get; set; }
-
-        public string UserId { get; set; }
-
-        public ApplicationUser User { get; set; }
-
-        public string CategoryId { get; set; }
+        public IEnumerable<SingleViewModel> Exercises { get; set; }
     }
 }
