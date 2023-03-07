@@ -30,8 +30,8 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
-    
-    - task: PublishPipelineArtifact@1
-      inputs:
-        targetPath: '$(Pipeline.Workspace)'
-        publishLocation: 'pipeline'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+     targetPath: '$(Pipeline.Workspace)'
+     publishLocation: 'pipeline'
